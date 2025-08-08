@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarCraft Remix - Vibe Castle Rush</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hud">
+    <div class="hud-left">
+      <div class="title">StarCraft Remix</div>
+      <div class="resources">
+        <span class="res res-wood">🌲 Wood: <strong id="woodCount">0</strong></span>
+        <span class="res res-stone">🪨 Stone: <strong id="stoneCount">0</strong></span>
+      </div>
+    </div>
+    <div class="hud-right">
+      <div class="unit-panel">
+        <button id="btnGatherer" class="btn glow">+ Gatherer<br/><small>(50 wood)</small></button>
+        <button id="btnWarrior" class="btn glow">+ Warrior<br/><small>(70 wood, 30 stone)</small></button>
+        <button id="btnDefender" class="btn glow">+ Defender<br/><small>(40 wood, 110 stone)</small></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="help">
+    <div class="card glow">
+      <div class="card-title">How to Play</div>
+      <ul>
+        <li>Left-click a unit to select. Shift+Left-click to multi-select.</li>
+        <li>Right-click (or Alt+Left-click) to command selected units to move.</li>
+        <li>Right-click a tree/rock with gatherers selected to start gathering.</li>
+      </ul>
+    </div>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <script src="main.js"></script>
+</body>
+</html>
